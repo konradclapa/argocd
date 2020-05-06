@@ -109,7 +109,7 @@ metadata:
     app: ratings
     version: v1
 spec:
-  replicas: 5
+  replicas: 1
   selector:
     matchLabels:
       app: ratings
@@ -174,7 +174,7 @@ spec:
       serviceAccountName: bookinfo-reviews
       containers:
       - name: reviews
-        image: docker.io/istio/examples-bookinfo-reviews-v3:1.16.0
+        image: docker.io/istio/examples-bookinfo-reviews-v2:1.16.0
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR
