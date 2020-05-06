@@ -283,6 +283,9 @@ metadata:
     app: productpage
     service: productpage
 spec:
+  type: LoadBalancer
+  loadBalancerIP: 172.16.13.122
+
   ports:
   - port: 9080
     name: http
